@@ -1,0 +1,29 @@
+{
+  "name": "cedaro/example-website",
+  "description": "",
+  "type": "project",
+  "homepage": "http://example.com/",
+  "license": "MIT",
+  "require": {
+    "johnpbloch/wordpress": "~4.2"
+  },
+  "require-dev": {
+    "wpackagist-plugin/plugin-toggle": "~1.1",
+    "wpackagist-plugin/query-monitor": "~2.7",
+    "wpackagist-plugin/rewrite-rules-inspector": "~1.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "content/plugins/{$name}": ["type:wordpress-plugin"],
+      "content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+      "content/themes/{$name}": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "wordpress"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ]
+}

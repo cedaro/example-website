@@ -1,0 +1,29 @@
+{
+  "name": "example-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cedaro/example-website.git"
+  },
+  "dependencies": {
+    "browserify-shim": "~3.8",
+    "grunt": "~0.4",
+    "grunt-browserify": "~3.8",
+    "load-grunt-config": "~0.17"
+  },
+  "browserify-shim": {
+    "backbone": "global:Backbone",
+    "jquery": "global:jQuery",
+    "underscore": "global:_",
+    "wp": "global:wp"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
